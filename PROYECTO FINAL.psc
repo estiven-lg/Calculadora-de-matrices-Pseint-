@@ -2,17 +2,18 @@
 // HERBERTH LIMA
 //ESTIVEN LAFERRE
 // JAVIER DE LA CRUZ 
-Funcion printMatriz(dimX,dimY,data,operadingX,operadingY)
-	Definir x, j,i Como Numero;
-	Para x<-0 Hasta dimY-1 Con Paso 1 Hacer
-		si x == 0 Entonces
-			Para i<-0 Hasta dimX-1 Con Paso 1 Hacer
+
+Funcion printMatrix(dimX,dimY,data,operadingX,operadingY)
+	Definir Mx, My Como Numero;
+	Para Mx<-0 Hasta dimY-1 Con Paso 1 Hacer
+		si Mx == 0 Entonces
+			Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
 				Escribir Sin Saltar " _";
 			FinPara
 		SiNo
 			Escribir " ";
-			Para i<-0 Hasta (dimX)*2 Con Paso 1 Hacer
-				si (i MOD 2 ) == 0 Entonces
+			Para My<-0 Hasta (dimX)*2 Con Paso 1 Hacer
+				si (My MOD 2 ) == 0 Entonces
 					Escribir Sin Saltar "|";
 				SiNo
 					Escribir Sin Saltar "-";
@@ -21,46 +22,46 @@ Funcion printMatriz(dimX,dimY,data,operadingX,operadingY)
 		FinSi
 		Escribir " ";
 		Escribir Sin Saltar"|";
-		Para j<-0 Hasta  dimX-1 Con Paso 1 Hacer
-			si x == operadingY y j == operadingX Entonces
+		Para My<-0 Hasta  dimX-1 Con Paso 1 Hacer
+			si Mx == operadingY y My == operadingX Entonces
 				Escribir Sin Saltar "?|";
 			SiNo
-				Escribir Sin Saltar data[x,j],"|";
+				Escribir Sin Saltar data[Mx,My],"|";
 			FinSi
-
+			
 		FinPara
 		
 	FinPara
 	Escribir "";
-	Para i<-0 Hasta dimX-1 Con Paso 1 Hacer
+	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
 		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir " ";
 FinFuncion
 
-Funcion printMatrizOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,sing)
-	Definir x, j,i Como Numero;
-	Para x<-0 Hasta dimY-1 Con Paso 1 Hacer
-		si x == 0 Entonces
-			Para i<-0 Hasta dimX-1 Con Paso 1 Hacer
+Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,sing)
+	Definir Mx,My Como Numero;
+	Para Mx<-0 Hasta dimY-1 Con Paso 1 Hacer
+		si Mx == 0 Entonces
+			Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
 				Escribir Sin Saltar " _";
 			FinPara
 			Escribir Sin Saltar "    ";
-			Para i<-0 Hasta dimX-1 Con Paso 1 Hacer
+			Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
 				Escribir Sin Saltar " _";
 			FinPara
 		SiNo
 			Escribir " ";
-			Para i<-0 Hasta (dimX)*2 Con Paso 1 Hacer
-				si (i MOD 2 ) == 0 Entonces
+			Para My<-0 Hasta (dimX)*2 Con Paso 1 Hacer
+				si (My MOD 2 ) == 0 Entonces
 					Escribir Sin Saltar "|";
 				SiNo
 					Escribir Sin Saltar "-";
 				FinSi
 			FinPara
 			Escribir Sin Saltar "   ";
-			Para i<-0 Hasta (dimX)*2 Con Paso 1 Hacer
-				si (i MOD 2 ) == 0 Entonces
+			Para My<-0 Hasta (dimX)*2 Con Paso 1 Hacer
+				si (My MOD 2 ) == 0 Entonces
 					Escribir Sin Saltar "|";
 				SiNo
 					Escribir Sin Saltar "-";
@@ -69,37 +70,37 @@ Funcion printMatrizOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 		FinSi
 		Escribir " ";
 		Escribir Sin Saltar"|";
-		Para j<-0 Hasta  dimX-1 Con Paso 1 Hacer
-			si x == operadingY y j == operadingX y numMat==1 Entonces
+		Para My<-0 Hasta  dimX-1 Con Paso 1 Hacer
+			si Mx == operadingY y My == operadingX y numMat==1 Entonces
 				Escribir Sin Saltar "?|";
 			SiNo
-				Escribir Sin Saltar data1[x,j],"|";
+				Escribir Sin Saltar data1[Mx,My],"|";
 			FinSi
 			
 		FinPara
 		
-		si trunc(dimY/2) == x Entonces
+		si trunc(dimY/2) == Mx Entonces
 			Escribir Sin Saltar " + ";
 		SiNo
 			Escribir Sin Saltar "   ";
 		FinSi
 		
 		Escribir Sin Saltar"|";
-		Para j<-0 Hasta  dimX-1 Con Paso 1 Hacer
-			si x == operadingY y j == operadingX y numMat==2  Entonces
+		Para My<-0 Hasta  dimX-1 Con Paso 1 Hacer
+			si Mx == operadingY y My == operadingX y numMat==2  Entonces
 				Escribir Sin Saltar "?|";
 			SiNo
-				Escribir Sin Saltar data2[x,j],"|";
+				Escribir Sin Saltar data2[Mx,My],"|";
 			FinSi
 			
 		FinPara
 	FinPara
 	Escribir "";
-	Para i<-0 Hasta dimX-1 Con Paso 1 Hacer
+	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
 		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir Sin Saltar "    ";
-	Para i<-0 Hasta dimX-1 Con Paso 1 Hacer
+	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
 		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir " ";
