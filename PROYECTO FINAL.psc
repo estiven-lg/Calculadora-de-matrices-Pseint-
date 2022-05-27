@@ -33,7 +33,7 @@ Funcion printMatriz(dimX,dimY,data,operadingX,operadingY)
 	FinPara
 	Escribir "";
 	Para i<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " �";
+		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir " ";
 FinFuncion
@@ -96,11 +96,11 @@ Funcion printMatrizOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 	FinPara
 	Escribir "";
 	Para i<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " �";
+		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir Sin Saltar "    ";
 	Para i<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " �";
+		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir " ";
 FinFuncion
