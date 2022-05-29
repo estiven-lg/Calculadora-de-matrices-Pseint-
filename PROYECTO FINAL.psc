@@ -34,7 +34,7 @@ Funcion printMatrix(dimX,dimY,data,operadingX,operadingY)
 	FinPara
 	Escribir "";
 	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " Â¯";
+		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir " ";
 FinFuncion
@@ -97,11 +97,11 @@ Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 	FinPara
 	Escribir "";
 	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " Â¯";
+		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir Sin Saltar "    ";
 	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " Â¯";
+		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir " ";
 FinFuncion
@@ -122,39 +122,53 @@ Algoritmo sistemaoperaciones
 		Leer OPERACION;
 		Segun OPERACION  Hacer
 			1:
-				Escribir 'EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA SUMA DE 2 NUMEROS';
+				Escribir 'EN ESTA OPCIÓN DEL MENU SE REALIZARA LA SUMA DE 2 NUMEROS';
 				Escribir 'INGRESE EL NUMERO 1';
 				Leer NUMERO1;
 				Escribir 'INGRESE EL NUMERO 2';
 				Leer NUMERO2;
 				Escribir 'EL RESULTADO ES ',NUMERO1+NUMERO2;
 			2:
-				Escribir 'EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA RESTA DE 2 NUMEROS';
+				Escribir 'EN ESTA OPCIÓN DEL MENU SE REALIZARA LA RESTA DE 2 NUMEROS';
 				Escribir 'INGRESE EL NUMERO 1';
 				Leer NUMERO1;
 				Escribir 'INGRESE EL NUMERO 2';
 				Leer NUMERO2;
 				Escribir 'EL RESULTADO ES ',NUMERO1-NUMERO2;
 			3:
-				Escribir 'EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA MULTIPLICACIÃ“N DE 2 NUMEROS';
+				Escribir 'EN ESTA OPCIÓN DEL MENU SE REALIZARA LA MULTIPLICACIÓN DE 2 NUMEROS';
 				Escribir 'INGRESE EL NUMERO 1';
 				Leer NUMERO1;
 				Escribir 'INGRESE EL NUMERO 2';
 				Leer NUMERO2;
 				Escribir 'EL RESULTADO ES ',NUMERO1*NUMERO2;
 			4:
-				Escribir 'EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA DIVISIÃ“N DE 2 NUMEROS';
+				Escribir 'EN ESTA OPCIÓN DEL MENU SE REALIZARA LA DIVISIÓN DE 2 NUMEROS';
 				Escribir 'INGRESE EL NUMERO 1';
 				Leer NUMERO1;
 				Escribir 'INGRESE EL NUMERO 2';
 				Leer NUMERO2;
 				Escribir 'EL RESULTADO ES ',NUMERO1/NUMERO2;
 			5:
+				Definir dimX,dimY Como Entero;
+				Escribir "INGRESE EL NUMERO DE FILAS DE LA MATRIZ";
+				Leer dimY;
+				Escribir "INGRESE EL NUMERO DE COLUMNAS DE LA MATRIZ";
+				Leer dimX;
 			6:
-			7:
+				Definir dimX,dimY Como Entero;
+				Escribir "INGRESE EL NUMERO DE FILAS DE LA MATRIZ";
+				Leer dimY;
+				Escribir "INGRESE EL NUMERO DE COLUMNAS DE LA MATRIZ";
+				Leer dimX;
+			7:				Definir dimX,dimY Como Entero;
+				Escribir "INGRESE EL NUMERO DE FILAS DE LA MATRICES";
+				Leer dimY;
+				Escribir "INGRESE EL NUMERO DE COLUMNAS DE LA MATRICES";
+				Leer dimX;
 			8:
 			De Otro Modo:
-				Escribir 'LA OPCIÃ“N QUE INGRESO NO ESTA DENTRO DEL MENU FAVOR VERIFIQUE Y VUELVA A INTENTARLO';
+				Escribir 'LA OPCIÓN QUE INGRESO NO ESTA DENTRO DEL MENU FAVOR VERIFIQUE Y VUELVA A INTENTARLO';
 		FinSegun
 		Escribir 'PORFAVOR PRECIONE UNA TECLA PARA CONTINUAR';
 		Esperar Tecla;
