@@ -3,6 +3,7 @@
 //ESTIVEN LAFERRE
 // JAVIER DE LA CRUZ 
 
+//funcion para pintar un arreglo solo
 Funcion printMatrix(dimX,dimY,data,operadingX,operadingY)
 	Definir Mx, My Como Numero;
 	Para Mx<-0 Hasta dimY-1 Con Paso 1 Hacer
@@ -34,11 +35,12 @@ Funcion printMatrix(dimX,dimY,data,operadingX,operadingY)
 	FinPara
 	Escribir "";
 	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " ¯";
+		Escribir Sin Saltar " Â¯";
 	FinPara
 	Escribir " ";
 FinFuncion
 
+//funcion para pintar 2 arreglos con un signo en medio
 Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,sing)
 	Definir Mx,My Como Numero;
 	Para Mx<-0 Hasta dimY-1 Con Paso 1 Hacer
@@ -97,15 +99,16 @@ Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 	FinPara
 	Escribir "";
 	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " ¯";
+		Escribir Sin Saltar " Â¯";
 	FinPara
 	Escribir Sin Saltar "    ";
 	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " ¯";
+		Escribir Sin Saltar " Â¯";
 	FinPara
 	Escribir " ";
 FinFuncion
 
+//regresa un arreglo lleno de 0
 Funcion  getEmptyArray(data, dimX, dimY)
 	Definir forX,forY Como Entero;
 	Para forX <- 0 Hasta dimX-1 Con Paso 1 Hacer
@@ -114,6 +117,8 @@ Funcion  getEmptyArray(data, dimX, dimY)
 		FinPara
 	FinPara
 FinFuncion
+
+//llena el arreglo con datos seleccionados por el usuario
 funcion readArray(data, dimX, dimY)
 	Definir forX,forY Como Entero;
 	Para forX <- 0 Hasta dimX-1 Con Paso 1 Hacer
@@ -125,6 +130,7 @@ funcion readArray(data, dimX, dimY)
 	FinPara
 FinFuncion
 
+//llena 2 arrays con datos seleccionado por el usuario
 funcion readArrayOperations(data1,data2, dimX, dimY,sing)
 	Definir forX,forY Como Entero;
 	Para forX <- 0 Hasta dimX-1 Con Paso 1 Hacer
@@ -143,6 +149,7 @@ funcion readArrayOperations(data1,data2, dimX, dimY,sing)
 	FinPara
 FinFuncion
 
+//regresa la suma de todos los numeros dentro del areglo
 funcion res<-sumarArray(data, dimX, dimY)
 	Definir forX,forY, res Como Entero;
 	res<-0;
@@ -153,6 +160,7 @@ funcion res<-sumarArray(data, dimX, dimY)
 	FinPara	
 FinFuncion
 
+//regresa la resta de todos los numeros dentro del array
 funcion res<-restarArray(data, dimX, dimY)
 	Definir forX,forY, res Como Entero;
 	res<-0;
@@ -163,6 +171,7 @@ funcion res<-restarArray(data, dimX, dimY)
 	FinPara	
 FinFuncion
 
+//regresa un arreglo con el resultado de la suma de 2 arreglos
 funcion sumarArrays(dataRes,data1,data2, dimX, dimY)
 	Definir forX,forY, res Como Entero;
 	res<-0;
@@ -173,7 +182,7 @@ funcion sumarArrays(dataRes,data1,data2, dimX, dimY)
 	FinPara	
 FinFuncion
 
-
+//regresa un arreglo con el resultado de la resta de 2 arreglos
 funcion restarArrays(dataRes,data1,data2, dimX, dimY)
 	Definir forX,forY, res Como Entero;
 	res<-0;
@@ -184,7 +193,7 @@ funcion restarArrays(dataRes,data1,data2, dimX, dimY)
 	FinPara	
 FinFuncion
 
-Algoritmo sistemaoperaciones
+Algoritmo sistemaOperaciones
 	Definir NUMERO1,NUMERO2,OPERACION,RESULTADO Como Entero;
 	Definir dimX,dimY Como Entero;
 	Definir Array,Array1, Array2,ArrayRes Como Entero;
@@ -203,28 +212,28 @@ Algoritmo sistemaoperaciones
 		Leer OPERACION;
 		Segun OPERACION  Hacer
 			1:
-				Escribir "EN ESTA OPCIÓN DEL MENU SE REALIZARA LA SUMA DE 2 NUMEROS";
+				Escribir "EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA SUMA DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
 				Leer NUMERO2;
 				Escribir "EL RESULTADO ES ",NUMERO1+NUMERO2;
 			2:
-				Escribir "EN ESTA OPCIÓN DEL MENU SE REALIZARA LA RESTA DE 2 NUMEROS";
+				Escribir "EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA RESTA DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
 				Leer NUMERO2;
 				Escribir "EL RESULTADO ES ",NUMERO1-NUMERO2;
 			3:
-				Escribir "EN ESTA OPCI?N DEL MENU SE REALIZARA LA MULTIPLICACIÓN DE 2 NUMEROS";
+				Escribir "EN ESTA OPCI?N DEL MENU SE REALIZARA LA MULTIPLICACIÃ“N DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
 				Leer NUMERO2;
 				Escribir "EL RESULTADO ES ",NUMERO1*NUMERO2;
 			4:
-				Escribir "EN ESTA OPCIÓN DEL MENU SE REALIZARA LA DIVISIÓN DE 2 NUMEROS";
+				Escribir "EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA DIVISIÃ“N DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
@@ -287,7 +296,7 @@ Algoritmo sistemaoperaciones
 				Escribir "EL RESULTADO DE LA RESTA DE MATRICES ES EL SIGUIENTE:";
 				printMatrix(dimX,dimY,ArrayRes,-1,-1);
 			De Otro Modo:
-				Escribir "LA OPCIÓN QUE INGRESO NO ESTA DENTRO DEL MENU FAVOR VERIFIQUE Y VUELVA A INTENTARLO";
+				Escribir "LA OPCIÃ“N QUE INGRESO NO ESTA DENTRO DEL MENU FAVOR VERIFIQUE Y VUELVA A INTENTARLO";
 		FinSegun
 		Escribir "PORFAVOR PRECIONE UNA TECLA PARA CONTINUAR";
 		Esperar Tecla;
