@@ -1,9 +1,9 @@
 # proyecto-final 
 ## Introducción a los Sistemas de Computo
-
-E.J Laferré Guevara         7690-22-2644 
-F.J De La Cruz Sierra       7690-22-3875 
-H.I Lima Chinchilla        7690-18-11726 
+### Colaboradores
+- E.J Laferré Guevara         7690-22-2644 
+- F.J De La Cruz Sierra       7690-22-3875 
+- H.I Lima Chinchilla        7690-18-11726 
 
 Repositorio:
 
