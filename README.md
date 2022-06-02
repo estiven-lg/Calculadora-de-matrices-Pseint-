@@ -12,7 +12,7 @@ Requisitos
 ### Instalacion de Pseint
 Descargar el paquete de instalacion dependiendo de tu maquina
 
-GNU/Linux:http://pseint.sourceforge.net/index.php?page=descargas.php&os=lnx
+GNU/Linux:http://pseint.sourceforge.net/index.php?page=descargas.php&os=lnx \n
 Windows:http://pseint.sourceforge.net/index.php?page=descargas.php&os=w32
 macOS:http://pseint.sourceforge.net/index.php?page=descargas.php&os=mac
 
