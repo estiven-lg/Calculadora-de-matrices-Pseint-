@@ -6,14 +6,14 @@
 //funcion para pintar un arreglo solo
 Funcion printMatrix(dimX,dimY,data,operadingX,operadingY)
 	Definir Mx, My Como Numero;
-	Para Mx<-0 Hasta dimY-1 Con Paso 1 Hacer
+	Para Mx<-0 Hasta dimX-1 Con Paso 1 Hacer
 		si Mx == 0 Entonces
-			Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
+			Para My<-0 Hasta dimY-1 Con Paso 1 Hacer
 				Escribir Sin Saltar " _";
 			FinPara
 		SiNo
 			Escribir " ";
-			Para My<-0 Hasta (dimX)*2 Con Paso 1 Hacer
+			Para My<-0 Hasta (dimY)*2 Con Paso 1 Hacer
 				si (My MOD 2 ) == 0 Entonces
 					Escribir Sin Saltar "|";
 				SiNo
@@ -23,7 +23,7 @@ Funcion printMatrix(dimX,dimY,data,operadingX,operadingY)
 		FinSi
 		Escribir " ";
 		Escribir Sin Saltar"|";
-		Para My<-0 Hasta  dimX-1 Con Paso 1 Hacer
+		Para My<-0 Hasta  dimY-1 Con Paso 1 Hacer
 			si Mx == operadingX y My == operadingY Entonces
 				Escribir Sin Saltar "?|";
 			SiNo
@@ -34,8 +34,8 @@ Funcion printMatrix(dimX,dimY,data,operadingX,operadingY)
 		
 	FinPara
 	Escribir "";
-	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " Â¯";
+	Para My<-0 Hasta dimY-1 Con Paso 1 Hacer
+		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir " ";
 FinFuncion
@@ -43,18 +43,18 @@ FinFuncion
 //funcion para pintar 2 arreglos con un signo en medio
 Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,sing)
 	Definir Mx,My Como Numero;
-	Para Mx<-0 Hasta dimY-1 Con Paso 1 Hacer
+	Para Mx<-0 Hasta dimX-1 Con Paso 1 Hacer
 		si Mx == 0 Entonces
-			Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
+			Para My<-0 Hasta dimY-1 Con Paso 1 Hacer
 				Escribir Sin Saltar " _";
 			FinPara
 			Escribir Sin Saltar "    ";
-			Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
+			Para My<-0 Hasta dimY-1 Con Paso 1 Hacer
 				Escribir Sin Saltar " _";
 			FinPara
 		SiNo
 			Escribir " ";
-			Para My<-0 Hasta (dimX)*2 Con Paso 1 Hacer
+			Para My<-0 Hasta (dimY)*2 Con Paso 1 Hacer
 				si (My MOD 2 ) == 0 Entonces
 					Escribir Sin Saltar "|";
 				SiNo
@@ -62,7 +62,7 @@ Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 				FinSi
 			FinPara
 			Escribir Sin Saltar "   ";
-			Para My<-0 Hasta (dimX)*2 Con Paso 1 Hacer
+			Para My<-0 Hasta (dimY)*2 Con Paso 1 Hacer
 				si (My MOD 2 ) == 0 Entonces
 					Escribir Sin Saltar "|";
 				SiNo
@@ -72,7 +72,7 @@ Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 		FinSi
 		Escribir " ";
 		Escribir Sin Saltar"|";
-		Para My<-0 Hasta  dimX-1 Con Paso 1 Hacer
+		Para My<-0 Hasta  dimY-1 Con Paso 1 Hacer
 			si Mx == operadingX y My == operadingY y numMat==1 Entonces
 				Escribir Sin Saltar "?|";
 			SiNo
@@ -81,14 +81,14 @@ Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 			
 		FinPara
 		
-		si trunc(dimY/2) == Mx Entonces
+		si trunc(dimX/2) == Mx Entonces
 			Escribir Sin Saltar " + ";
 		SiNo
 			Escribir Sin Saltar "   ";
 		FinSi
 		
 		Escribir Sin Saltar"|";
-		Para My<-0 Hasta  dimX-1 Con Paso 1 Hacer
+		Para My<-0 Hasta  dimY-1 Con Paso 1 Hacer
 			si Mx == operadingX y My == operadingY y numMat==2  Entonces
 				Escribir Sin Saltar "?|";
 			SiNo
@@ -98,12 +98,12 @@ Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 		FinPara
 	FinPara
 	Escribir "";
-	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " Â¯";
+	Para My<-0 Hasta dimY-1 Con Paso 1 Hacer
+		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir Sin Saltar "    ";
-	Para My<-0 Hasta dimX-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " Â¯";
+	Para My<-0 Hasta dimY-1 Con Paso 1 Hacer
+		Escribir Sin Saltar " ¯";
 	FinPara
 	Escribir " ";
 FinFuncion
@@ -212,28 +212,28 @@ Algoritmo sistemaOperaciones
 		Leer OPERACION;
 		Segun OPERACION  Hacer
 			1:
-				Escribir "EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA SUMA DE 2 NUMEROS";
+				Escribir "EN ESTA OPCIÓN DEL MENU SE REALIZARA LA SUMA DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
 				Leer NUMERO2;
 				Escribir "EL RESULTADO ES ",NUMERO1+NUMERO2;
 			2:
-				Escribir "EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA RESTA DE 2 NUMEROS";
+				Escribir "EN ESTA OPCIÓN DEL MENU SE REALIZARA LA RESTA DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
 				Leer NUMERO2;
 				Escribir "EL RESULTADO ES ",NUMERO1-NUMERO2;
 			3:
-				Escribir "EN ESTA OPCI?N DEL MENU SE REALIZARA LA MULTIPLICACIÃ“N DE 2 NUMEROS";
+				Escribir "EN ESTA OPCI?N DEL MENU SE REALIZARA LA MULTIPLICACIÓN DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
 				Leer NUMERO2;
 				Escribir "EL RESULTADO ES ",NUMERO1*NUMERO2;
 			4:
-				Escribir "EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA DIVISIÃ“N DE 2 NUMEROS";
+				Escribir "EN ESTA OPCIÓN DEL MENU SE REALIZARA LA DIVISIÓN DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
@@ -296,7 +296,7 @@ Algoritmo sistemaOperaciones
 				Escribir "EL RESULTADO DE LA RESTA DE MATRICES ES EL SIGUIENTE:";
 				printMatrix(dimX,dimY,ArrayRes,-1,-1);
 			De Otro Modo:
-				Escribir "LA OPCIÃ“N QUE INGRESO NO ESTA DENTRO DEL MENU FAVOR VERIFIQUE Y VUELVA A INTENTARLO";
+				Escribir "LA OPCIÓN QUE INGRESO NO ESTA DENTRO DEL MENU FAVOR VERIFIQUE Y VUELVA A INTENTARLO";
 		FinSegun
 		Escribir "PORFAVOR PRECIONE UNA TECLA PARA CONTINUAR";
 		Esperar Tecla;
