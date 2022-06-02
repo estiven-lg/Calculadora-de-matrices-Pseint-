@@ -19,5 +19,5 @@ Windows:http://pseint.sourceforge.net/index.php?page=descargas.php&os=w32
 macOS:http://pseint.sourceforge.net/index.php?page=descargas.php&os=mac
 
 
-##- Configuracion del programa (Configurar>opciones del lenguaje>Personalizar...>)
+## - Configuracion del programa (Configurar>opciones del lenguaje>Personalizar...>)
 ![image](https://user-images.githubusercontent.com/95370813/171744477-a0e2c716-5cf9-4bc4-8394-ce57753cf70e.png)
