@@ -7,7 +7,7 @@
 
 Repositorio:https://github.com/estiven-lg/proyecto-final
 
-Requisitos
+# Requisitos
 ## - tener instalado pseint
 ### Instalacion de Pseint
 Descargar el paquete de instalacion dependiendo de tu maquina
