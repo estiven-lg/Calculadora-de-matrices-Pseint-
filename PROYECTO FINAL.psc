@@ -35,7 +35,7 @@ Funcion printMatrix(dimX,dimY,data,operadingX,operadingY)
 	FinPara
 	Escribir "";
 	Para My<-0 Hasta dimY-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " ¯";
+		Escribir Sin Saltar " Â¯";
 	FinPara
 	Escribir " ";
 FinFuncion
@@ -82,7 +82,7 @@ Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 		FinPara
 		
 		si trunc(dimX/2) == Mx Entonces
-			Escribir Sin Saltar " + ";
+			Escribir Sin Saltar " ", sing, " ";
 		SiNo
 			Escribir Sin Saltar "   ";
 		FinSi
@@ -99,11 +99,11 @@ Funcion printMatrixOperation(dimX,dimY,data1,data2,numMat,operadingX,operadingY,
 	FinPara
 	Escribir "";
 	Para My<-0 Hasta dimY-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " ¯";
+		Escribir Sin Saltar " Â¯";
 	FinPara
 	Escribir Sin Saltar "    ";
 	Para My<-0 Hasta dimY-1 Con Paso 1 Hacer
-		Escribir Sin Saltar " ¯";
+		Escribir Sin Saltar " Â¯";
 	FinPara
 	Escribir " ";
 FinFuncion
@@ -212,28 +212,28 @@ Algoritmo sistemaOperaciones
 		Leer OPERACION;
 		Segun OPERACION  Hacer
 			1:
-				Escribir "EN ESTA OPCIÓN DEL MENU SE REALIZARA LA SUMA DE 2 NUMEROS";
+				Escribir "EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA SUMA DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
 				Leer NUMERO2;
 				Escribir "EL RESULTADO ES ",NUMERO1+NUMERO2;
 			2:
-				Escribir "EN ESTA OPCIÓN DEL MENU SE REALIZARA LA RESTA DE 2 NUMEROS";
+				Escribir "EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA RESTA DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
 				Leer NUMERO2;
 				Escribir "EL RESULTADO ES ",NUMERO1-NUMERO2;
 			3:
-				Escribir "EN ESTA OPCI?N DEL MENU SE REALIZARA LA MULTIPLICACIÓN DE 2 NUMEROS";
+				Escribir "EN ESTA OPCI?N DEL MENU SE REALIZARA LA MULTIPLICACIÃ“N DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
 				Leer NUMERO2;
 				Escribir "EL RESULTADO ES ",NUMERO1*NUMERO2;
 			4:
-				Escribir "EN ESTA OPCIÓN DEL MENU SE REALIZARA LA DIVISIÓN DE 2 NUMEROS";
+				Escribir "EN ESTA OPCIÃ“N DEL MENU SE REALIZARA LA DIVISIÃ“N DE 2 NUMEROS";
 				Escribir "INGRESE EL NUMERO 1";
 				Leer NUMERO1;
 				Escribir "INGRESE EL NUMERO 2";
@@ -296,7 +296,7 @@ Algoritmo sistemaOperaciones
 				Escribir "EL RESULTADO DE LA RESTA DE MATRICES ES EL SIGUIENTE:";
 				printMatrix(dimX,dimY,ArrayRes,-1,-1);
 			De Otro Modo:
-				Escribir "LA OPCIÓN QUE INGRESO NO ESTA DENTRO DEL MENU FAVOR VERIFIQUE Y VUELVA A INTENTARLO";
+				Escribir "LA OPCIÃ“N QUE INGRESO NO ESTA DENTRO DEL MENU FAVOR VERIFIQUE Y VUELVA A INTENTARLO";
 		FinSegun
 		Escribir "PORFAVOR PRECIONE UNA TECLA PARA CONTINUAR";
 		Esperar Tecla;
